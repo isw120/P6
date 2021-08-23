@@ -1,0 +1,340 @@
+a
+{
+	font-size: 25px;
+	text-decoration: none;
+	color: white;
+
+}
+
+
+#topBackgroundColor
+{
+	background-color: rgba(72, 91, 96, 1); height: 80px;
+}
+
+
+#bestMovieTitle
+{
+text-align: center;
+} 
+
+
+#topText
+{
+	width: 995px; display: inline-block; position: relative; bottom: 60px; color: white;
+}
+
+
+
+.background-color 
+{
+ 
+;	
+background-image:
+ 
+linear-gradient(to left, rgba(0, 0, 0, 1), 
+rgba(89, 89, 89, 1));
+ 
+
+height: 300px;
+background-size: cover; 
+    
+}
+
+
+#window
+{
+	width: 725px; color: black; display: inline-block;
+
+}
+
+
+#movieTitle
+{
+	display: block;
+}
+
+#movieGender
+{
+	display: block;
+}
+
+#movieReleaseDate
+{
+	display: block;
+}
+
+#movieRated
+{
+	display: block;
+}
+
+#movieScore
+{
+	display: block;
+}
+
+#movieDirectors
+{
+	display: block;
+}
+
+#movieActors
+{
+	display: block;
+}
+
+#movieDuration
+{
+	display: block;
+}
+
+#movieCountry
+{
+	display: block;
+}
+
+#movieGrossIncome
+{
+	display: block;
+}
+
+#movieDescription
+{
+	display: block;
+}
+
+
+p 
+{
+	/*font-size: 25px;
+   font-size-adjust: color:#888888; text-shadow: 2px 0 white; letter-spacing:3px; font-weight:bold*/
+   display: inline-block;
+
+
+}
+
+
+#Image 
+{
+	display: inline-block; position: relative; bottom: 0px; 
+}
+
+#movieImg
+{
+	width: 250px; height: 300px;display: inline-block; position: relative; bottom: 100px;
+}
+
+
+#bestMovieDescription
+{
+	text-align: center; margin-left: 10em;
+}
+
+#bestMovieImg
+{
+	width: 250px; height: 300px
+}
+
+
+.p1
+{
+	text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
+	font-size: 27px;
+	vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 70px;
+
+}
+
+
+#myBtn
+{
+
+ text-align: center; color: white; display: block; margin: auto;background-color: red; border-radius: 5em;
+ width: 5em;
+}
+
+
+.p3{
+
+	font-size: 25px;
+	color: black;
+	text-align: center
+}
+div #best {
+    border-style: solid;
+    border-width: 5px;
+    border-left-width: 5px;
+    border-right-width: 5px;
+    border-color: black;
+}
+
+
+
+#frame {
+  overflow: hidden;
+}
+.slider {
+  position: relative;
+  transition: 500ms;
+  display: inline-flex;
+}
+.slide {
+  display: inline-block;
+}
+.slider-arrow-left {
+	z-index: 10;
+	position: absolute;
+	top: 70%;
+	left: 0px;
+}
+.slider-arrow-right {
+	z-index: 10;
+	position: absolute;
+	top: 70%;
+	right: 0px;
+}
+.svg-arrow:hover{
+	opacity:0.6;
+  cursor: pointer;
+}
+
+
+
+#second-frame {
+  overflow: hidden;
+}
+.second-slider {
+  position: relative;
+  transition: 500ms;
+  display: inline-flex;
+}
+.second-slide {
+  display: inline-block;
+}
+.second-slider-arrow-left {
+	z-index: 10;
+	position: absolute;
+	top: 110%;
+	left: 0px;
+}
+.second-slider-arrow-right {
+	z-index: 10;
+	position: absolute;
+	top: 110%;
+	right: 0px;
+}
+.second-svg-arrow:hover{
+	opacity:0.6;
+  cursor: pointer;
+}
+
+
+
+#third-frame {
+  overflow: hidden;
+}
+.third-slider {
+  position: relative;
+  transition: 500ms;
+  display: inline-flex;
+}
+.third-slide {
+  display: inline-block;
+}
+.third-slider-arrow-left {
+	z-index: 10;
+	position: absolute;
+	top: 150%;
+	left: 0px;
+}
+.third-slider-arrow-right {
+	z-index: 10;
+	position: absolute;
+	top: 150%;
+	right: 0px;
+}
+.third-svg-arrow:hover{
+	opacity:0.6;
+  cursor: pointer;
+}
+
+
+#fourth-frame {
+  overflow: hidden;
+}
+.fourth-slider {
+  position: relative;
+  transition: 500ms;
+  display: inline-flex;
+}
+.fourth-slide {
+  display: inline-block;
+}
+.fourth-slider-arrow-left {
+	z-index: 10;
+	position: absolute;
+	top: 190%;
+	left: 0px;
+}
+.fourth-slider-arrow-right {
+	z-index: 10;
+	position: absolute;
+	top: 190%;
+	right: 0px;
+}
+.fourth-svg-arrow:hover{
+	opacity:0.6;
+  cursor: pointer;
+}
+
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 99; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: auto;
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; 
+  padding: 30px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+img
+{
+	width: 250px;
+	height: 300px;
+}
+
+
+.slide:nth-child(2) img {
+	filter: blur(20px);
+}
