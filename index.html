@@ -3,235 +3,162 @@
 <head>
 	<meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="style.css">
-	<title></title>
+	<title>JustStreamIt</title>
 </head>
 <body>
-
-    <div id="topBackgroundColor">
+    <div id="navDiv">
         <div>
-
-            <p style="font-size: 25px; color: white; margin-left: 20px;">JustStreamIt</p>
+            <p id="pageName">JustStreamIt</p>
         </div>
-        <div style="margin: auto; text-align: right;  position: relative; bottom: 81px;">
-            <p style="font-size: 25px; color: white; margin-right: 30px;">Accueil</p>
-            <p style="font-size: 25px; color: white; margin-right: 20px;">Catégories</p>
+        <div id="navSecondContent">
+            <p>Accueil</p>
+            <p>Catégories</p>
         </div> 
     </div>
 
     <br>
 
-    <div class="background-color" >
-        <div id="topText">
+    <div class="bestMovie" >
+        <div id="bestMovieContent">
             <h1 id="bestMovieTitle"></h1>
-            <button id="myBtn">play</button>
-    
+            <button id="myBtn"><span id="bestMovieId"></span>play</button>
             <div id="myModal" class="modal">
                 <div class="modal-content">
                     <span class="close">&times;</span>
                     <div id="window">
-                            <p id="movieTitle">
-                            <p id="movieGender">
-                            <p id="movieReleaseDate">
-                            <p id="movieRated">
-                            <p id="movieScore">
-                            <p id="movieDirectors">
-                            <p id="movieActors">
-                            <p id="movieDuration">
-                            <p id="movieCountry">
-                            <p id="movieGrossIncome">
-                            <p id="movieDescription">
-                        </div>
-                        <div id="Image">
-                            <img id="movieImg">
-                        </div>
+                        <p id="movieTitle">
+                        <p id="movieGender">
+                        <p id="movieReleaseDate">
+                        <p id="movieRated">
+                        <p id="movieScore">
+                        <p id="movieDirectors">
+                        <p id="movieActors">
+                        <p id="movieDuration">
+                        <p id="movieCountry">
+                        <p id="movieGrossIncome">
+                        <p id="movieDescription">
+                    </div>
+                    <div id="ImageBloc">
+                        <img id="movieImg">
+                    </div>
                 </div>
             </div>
-
             <p id="bestMovieDescription"></p>
         </div>
-         <div style="width: 200px; display: inline-block;">
-             <img id="bestMovieImg">
+         <div id="divImg">
+             <img id="bestMovieImg" />
         </div>
     </div>
 
-    <h2 style="text-align: center;">Films les mieux notés</h2>
- 
+    <h2>Films les mieux notés</h2>
 
     <div class="slider-arrows">
         <div class="slider-arrow-left arrowLeft">
             <svg width="16" height="30" class="svg-arrow">
-                <polyline style="stroke-linejoin:miter; stroke:#00275a; stroke-width:3; fill: none;" points="15 2, 2 15, 15 28" />
-              </svg>
+                <polyline points="15 2, 2 15, 15 28" />
+            </svg>
         </div>
         <div class="slider-arrow-right arrowRight">
             <svg width="16" height="30" class="svg-arrow">
-                <polyline style="stroke-linejoin:miter; stroke:#00275a; stroke-width:3; fill: none;" points="2 2, 14 15, 2 28" />
+                <polyline points="2 2, 14 15, 2 28" />
             </svg>
         </div>
     </div>
 
-
     <div id="frame">
         <div id="slider">
-            <div class="slide" style="width: 200px; height: 100px; margin-left: 95px; margin-right: 95px;">
-                 
-            </div>
-            <div class="slide" style="width: 200px; height: 100px; margin-left: 95px; margin-right: 95px;">
-                  
-            </div>
-            <div class="slide" style="width: 200px; height: 300px; margin-left: 95px; margin-right: 95px;">
-                  
-            </div>
-            <div class="slide" style="width: 200px; height: 100px; margin-left: 95px; margin-right: 95px;">
-                   
-            </div>
-            <div class="slide" style="width: 200px; height: 100px; margin-left: 95px; margin-right: 95px;">
-                    
-            </div>
-            <div class="slide" style="width: 200px; height: 100px; margin-left: 95px; margin-right: 95px;">
-                   
-            </div>
-            <div class="slide" style="width: 200px; height: 100px; margin-left: 95px; margin-right: 95px;">
-                    
-            </div>
+            <div class="slide"></div>
+            <div class="slide"></div>
+            <div class="slide"></div>
+            <div class="slide"></div>
+            <div class="slide"></div>
+            <div class="slide"></div>
+            <div class="slide"></div>
         </div>
     </div>
 
-
-    <h2 style="text-align: center;">Animation</h2>
-
+    <h2 >Animation</h2>
 
     <div class="second-slider-arrows">
         <div class="second-slider-arrow-left second-arrowLeft">
             <svg width="16" height="30" class="second-svg-arrow">
-                <polyline style="stroke-linejoin:miter; stroke:#00275a; stroke-width:3; fill: none;" points="15 2, 2 15, 15 28" />
-              </svg>
+                <polyline points="15 2, 2 15, 15 28" />
+            </svg>
         </div>
         <div class="second-slider-arrow-right second-arrowRight">
             <svg width="16" height="30" class="second-svg-arrow">
-                <polyline style="stroke-linejoin:miter; stroke:#00275a; stroke-width:3; fill: none;" points="2 2, 14 15, 2 28" />
+                <polyline points="2 2, 14 15, 2 28" />
             </svg>
         </div>
     </div>
 
-
     <div id="second-frame">
         <div id="second-slider">
-            <div class="second-slide" style="width: 200px; height: 100px; margin-left: 95px; margin-right: 95px;">
-                  
-            </div>
-            <div class="second-slide" style="width: 200px; height: 100px; margin-left: 95px; margin-right: 95px;">
-                 
-            </div>
-            <div class="second-slide" style="width: 200px; height: 300px; margin-left: 95px; margin-right: 95px;">
-                  
-            </div>
-            <div class="second-slide" style="width: 200px; height: 100px; margin-left: 95px; margin-right: 95px;">
-                 
-            </div>
-            <div class="second-slide" style="width: 200px; height: 100px; margin-left: 95px; margin-right: 95px;">
-                    
-            </div>
-            <div class="second-slide" style="width: 200px; height: 100px; margin-left: 95px; margin-right: 95px;">
-                  
-            </div>
-            <div class="second-slide" style="width: 200px; height: 100px; margin-left: 95px; margin-right: 95px;">
-                   
-            </div>
+            <div class="second-slide"></div>
+            <div class="second-slide"></div>
+            <div class="second-slide"></div>
+            <div class="second-slide"></div>
+            <div class="second-slide"></div>
+            <div class="second-slide"></div>
+            <div class="second-slide"></div>
         </div>
     </div>
 
-
-    <h2 style="text-align: center;">Adventure</h2>
-
+    <h2>Adventure</h2>
 
     <div class="third-slider-arrows">
         <div class="third-slider-arrow-left third-arrowLeft">
             <svg width="16" height="30" class="third-svg-arrow">
-                <polyline style="stroke-linejoin:miter; stroke:#00275a; stroke-width:3; fill: none;" points="15 2, 2 15, 15 28" />
-              </svg>
+                <polyline points="15 2, 2 15, 15 28" />
+            </svg>
         </div>
         <div class="third-slider-arrow-right third-arrowRight">
             <svg width="16" height="30" class="third-svg-arrow">
-                <polyline style="stroke-linejoin:miter; stroke:#00275a; stroke-width:3; fill: none;" points="2 2, 14 15, 2 28" />
+                <polyline points="2 2, 14 15, 2 28" />
             </svg>
         </div>
     </div>
 
-
     <div id="third-frame">
         <div id="third-slider">
-            <div class="third-slide" style="width: 200px; height: 100px; margin-left: 95px; margin-right: 95px;">
-                  <img src="https://m.media-amazon.com/images/M/MV5BOTUwMmI1MWEtYzRkNy00NjBkLTllM2YtZmNkNmVjODI1M2Q2XkEyXkFqcGdeQXVyMzA2ODY0NA@@._V1_UY268_CR88,0,182,268_AL_.jpg"/>
-            </div>
-            <div class="third-slide" style="width: 200px; height: 100px; margin-left: 95px; margin-right: 95px;">
-                  <img src="https://m.media-amazon.com/images/M/MV5BOTk4NGM0NmUtOTc2Yi00NTcxLWE3NGItYzEwODZjNzlhZjE2XkEyXkFqcGdeQXVyNTgyNTA4MjM@._V1_UX182_CR0,0,182,268_AL_.jpg"/>
-            </div>
-            <div class="third-slide" style="width: 200px; height: 300px; margin-left: 95px; margin-right: 95px;">
-                  <img src="https://m.media-amazon.com/images/M/MV5BY2FiZDViZmEtNzY2Zi00ZjJiLTgwMDctMzdmYzJlMWU2NDJjXkEyXkFqcGdeQXVyNzAyMzY2NDk@._V1_UY268_CR4,0,182,268_AL_.jpg"/>
-            </div>
-            <div class="third-slide" style="width: 200px; height: 100px; margin-left: 95px; margin-right: 95px;">
-                   <img src="https://m.media-amazon.com/images/M/MV5BNzA5ZDNlZWMtM2NhNS00NDJjLTk4NDItYTRmY2EwMWZlMTY3XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX182_CR0,0,182,268_AL_.jpg"/>
-            </div>
-            <div class="third-slide" style="width: 200px; height: 100px; margin-left: 95px; margin-right: 95px;">
-                    <img src="https://m.media-amazon.com/images/M/MV5BN2Q5OWFmNWYtMDRmMi00YmIyLThiNDYtMDkwOTEyN2ZmNzY0XkEyXkFqcGdeQXVyNjA3OTI5MjA@._V1_UX182_CR0,0,182,268_AL_.jpg"/>
-            </div>
-            <div class="third-slide" style="width: 200px; height: 100px; margin-left: 95px; margin-right: 95px;">
-                   <img src="https://m.media-amazon.com/images/M/MV5BNWJkNmNlMTItY2U3Mi00YTYwLWE5OGItMGZhYzIyZWViZDgwXkEyXkFqcGdeQXVyMTEwNDgwMjgx._V1_UY268_CR9,0,182,268_AL_.jpg"/>
-            </div>
-            <div class="third-slide" style="width: 200px; height: 100px; margin-left: 95px; margin-right: 95px;">
-                    <img src="https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_UX182_CR0,0,182,268_AL_.jpg"/>
-            </div>
+            <div class="third-slide"></div>
+            <div class="third-slide"></div>
+            <div class="third-slide"></div>
+            <div class="third-slide"></div>
+            <div class="third-slide"></div>
+            <div class="third-slide"></div>
+            <div class="third-slide"></div>
         </div>
     </div>
 
-
-    <h2 style="text-align: center;">Sci-Fi</h2>
-
+    <h2>Sci-Fi</h2>
 
     <div class="fourth-slider-arrows">
         <div class="fourth-slider-arrow-left fourth-arrowLeft">
             <svg width="16" height="30" class="fourth-svg-arrow">
-                <polyline style="stroke-linejoin:miter; stroke:#00275a; stroke-width:3; fill: none;" points="15 2, 2 15, 15 28" />
-              </svg>
+                <polyline points="15 2, 2 15, 15 28" />
+            </svg>
         </div>
         <div class="fourth-slider-arrow-right fourth-arrowRight">
             <svg width="16" height="30" class="fourth-svg-arrow">
-                <polyline style="stroke-linejoin:miter; stroke:#00275a; stroke-width:3; fill: none;" points="2 2, 14 15, 2 28" />
+                <polyline points="2 2, 14 15, 2 28" />
             </svg>
         </div>
     </div>
 
-
     <div id="fourth-frame">
         <div id="fourth-slider">
-            <div class="fourth-slide" style="width: 200px; height: 100px; margin-left: 95px; margin-right: 95px;">
-                  <img src="https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_UX182_CR0,0,182,268_AL_.jpg"/>
-            </div>
-            <div class="fourth-slide" style="width: 200px; height: 100px; margin-left: 95px; margin-right: 95px;">
-                  <img src="https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UX182_CR0,0,182,268_AL_.jpg"/>
-            </div>
-            <div class="fourth-slide" style="width: 200px; height: 300px; margin-left: 95px; margin-right: 95px;">
-                  <img src="https://m.media-amazon.com/images/M/MV5BMzIwYzRmZTQtOThhYy00YjIzLThkODEtMjE2MGRjYzY1ODY1XkEyXkFqcGdeQXVyNTE0MzczOTk@._V1_UY268_CR3,0,182,268_AL_.jpg"/>
-            </div>
-            <div class="fourth-slide" style="width: 200px; height: 100px; margin-left: 95px; margin-right: 95px;">
-                   <img src="https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX182_CR0,0,182,268_AL_.jpg"/>
-            </div>
-            <div class="fourth-slide" style="width: 200px; height: 100px; margin-left: 95px; margin-right: 95px;">
-                    <img src="https://m.media-amazon.com/images/M/MV5BZmU0M2Y1OGUtZjIxNi00ZjBkLTg1MjgtOWIyNThiZWIwYjRiXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL_.jpg"/>
-            </div>
-            <div class="fourth-slide" style="width: 200px; height: 100px; margin-left: 95px; margin-right: 95px;">
-                   <img src="https://m.media-amazon.com/images/M/MV5BMGU2NzRmZjUtOGUxYS00ZjdjLWEwZWItY2NlM2JhNjkxNTFmXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UX182_CR0,0,182,268_AL_.jpg"/>
-            </div>
-            <div class="fourth-slide" style="width: 200px; height: 100px; margin-left: 95px; margin-right: 95px;">
-                    <img src="https://m.media-amazon.com/images/M/MV5BMjA4NDI0MTIxNF5BMl5BanBnXkFtZTYwNTM0MzY2._V1_UX182_CR0,0,182,268_AL_.jpg"/>
-            </div>
+            <div class="fourth-slide"></div>
+            <div class="fourth-slide"></div>
+            <div class="fourth-slide"></div>
+            <div class="fourth-slide"></div>
+            <div class="fourth-slide"></div>
+            <div class="fourth-slide"></div>
+            <div class="fourth-slide"></div>
         </div>
     </div>
 
-    
-
-
+<script src="carousel.js"></script>
 <script src="script.js"></script>
 </body>
 </html>

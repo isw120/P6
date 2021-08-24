@@ -1,176 +1,124 @@
-a
+#navDiv
 {
-	font-size: 25px;
-	text-decoration: none;
-	color: white;
-
+	background-color: rgba(72, 91, 96, 1); 
+	height: 3em;
+	font-size: 1.5em;
 }
 
-
-#topBackgroundColor
+#pageName
 {
-	background-color: rgba(72, 91, 96, 1); height: 80px;
+	color: white; 
+	position: relative;
+	top: 0.9em;
+	left: 0.7em;
 }
 
+#navSecondContent
+{
+	text-align: right;  
+	position: relative; 
+	bottom: 3.4em;
+}
+
+#navSecondContent p:nth-child(1)
+{
+	color: white; 
+	position: relative;
+	top: 2.1em;
+	right: 6em;
+}
+
+#navSecondContent p:nth-child(2)
+{
+	color: white; 
+	position: relative;
+	right: 1em;
+}
 
 #bestMovieTitle
 {
-text-align: center;
+	text-align: center;
 } 
 
 
-#topText
+#bestMovieContent
 {
-	width: 995px; display: inline-block; position: relative; bottom: 60px; color: white;
+	width: 62.1em; 
+	display: inline-block; 
+	position: relative; 
+	bottom: 5em; 
+	color: white;
 }
 
 
-
-.background-color 
+.bestMovie 
 {
- 
-;	
-background-image:
- 
-linear-gradient(to left, rgba(0, 0, 0, 1), 
-rgba(89, 89, 89, 1));
- 
-
-height: 300px;
-background-size: cover; 
-    
+  background-image:linear-gradient(to left, rgba(0, 0, 0, 1), rgba(89, 89, 89, 1));
+  height: 18.750em;
+  background-size: cover;   
 }
 
 
 #window
 {
-	width: 725px; color: black; display: inline-block;
-
+	width: 45.313em; 
+	color: black; 
+	display: inline-block;
 }
 
-
-#movieTitle
-{
-	display: block;
-}
-
-#movieGender
-{
-	display: block;
-}
-
-#movieReleaseDate
-{
-	display: block;
-}
-
-#movieRated
-{
-	display: block;
-}
-
-#movieScore
-{
-	display: block;
-}
-
-#movieDirectors
-{
-	display: block;
-}
-
-#movieActors
-{
-	display: block;
-}
-
-#movieDuration
-{
-	display: block;
-}
-
-#movieCountry
-{
-	display: block;
-}
-
-#movieGrossIncome
-{
-	display: block;
-}
-
-#movieDescription
+#window p
 {
 	display: block;
 }
 
 
-p 
+#ImageBloc 
 {
-	/*font-size: 25px;
-   font-size-adjust: color:#888888; text-shadow: 2px 0 white; letter-spacing:3px; font-weight:bold*/
-   display: inline-block;
-
-
-}
-
-
-#Image 
-{
-	display: inline-block; position: relative; bottom: 0px; 
+	display: inline-block; 
+	position: relative; 
+	bottom: 0em; 
 }
 
 #movieImg
 {
-	width: 250px; height: 300px;display: inline-block; position: relative; bottom: 100px;
+	display: inline-block; 
+	position: relative; 
+	bottom: 6.250em;
 }
 
 
 #bestMovieDescription
 {
-	text-align: center; margin-left: 10em;
+	text-align: center; 
 }
 
-#bestMovieImg
+#divImg
 {
-	width: 250px; height: 300px
+	width: 12.500em; 
+	display: inline-block;
 }
 
-
-.p1
+h2
 {
-	text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
-	font-size: 27px;
-	vertical-align: top;
-    display: inline-block;
-    text-align: center;
-    width: 70px;
-
+	text-align: center;
 }
 
+img
+{
+	width: 15.625em;
+	height: 18.750em;
+}
 
 #myBtn
 {
-
- text-align: center; color: white; display: block; margin: auto;background-color: red; border-radius: 5em;
- width: 5em;
+  text-align: center; 
+  color: white; 
+  display: block; 
+  margin: auto;
+  background-color: red; 
+  border-radius: 5em;
+  width: 5em;
 }
-
-
-.p3{
-
-	font-size: 25px;
-	color: black;
-	text-align: center
-}
-div #best {
-    border-style: solid;
-    border-width: 5px;
-    border-left-width: 5px;
-    border-right-width: 5px;
-    border-color: black;
-}
-
 
 
 #frame {
@@ -184,17 +132,24 @@ div #best {
 .slide {
   display: inline-block;
 }
+.slider .slide
+{
+	width: 12.500em; 
+	height: 6.250em; 
+	margin-left: 5.938em; 
+	margin-right: 5.938em;
+}
 .slider-arrow-left {
 	z-index: 10;
 	position: absolute;
 	top: 70%;
-	left: 0px;
+	left: 0em;
 }
 .slider-arrow-right {
 	z-index: 10;
 	position: absolute;
 	top: 70%;
-	right: 0px;
+	right: 0em;
 }
 .svg-arrow:hover{
 	opacity:0.6;
@@ -214,17 +169,24 @@ div #best {
 .second-slide {
   display: inline-block;
 }
+.second-slider .second-slide
+{
+	width: 12.500em; 
+	height: 6.250em; 
+	margin-left: 5.938em; 
+	margin-right: 5.938em;
+}
 .second-slider-arrow-left {
 	z-index: 10;
 	position: absolute;
 	top: 110%;
-	left: 0px;
+	left: 0em;
 }
 .second-slider-arrow-right {
 	z-index: 10;
 	position: absolute;
 	top: 110%;
-	right: 0px;
+	right: 0em;
 }
 .second-svg-arrow:hover{
 	opacity:0.6;
@@ -244,17 +206,24 @@ div #best {
 .third-slide {
   display: inline-block;
 }
+.third-slider .third-slide
+{
+	width: 12.500em; 
+	height: 6.250em; 
+	margin-left: 5.938em; 
+	margin-right: 5.938em;
+}
 .third-slider-arrow-left {
 	z-index: 10;
 	position: absolute;
 	top: 150%;
-	left: 0px;
+	left: 0em;
 }
 .third-slider-arrow-right {
 	z-index: 10;
 	position: absolute;
 	top: 150%;
-	right: 0px;
+	right: 0em;
 }
 .third-svg-arrow:hover{
 	opacity:0.6;
@@ -273,30 +242,46 @@ div #best {
 .fourth-slide {
   display: inline-block;
 }
+.fourth-slider .fourth-slide
+{
+	width: 12.500em; 
+	height: 6.250em; 
+	margin-left: 5.938em; 
+	margin-right: 5.938em;
+}
 .fourth-slider-arrow-left {
 	z-index: 10;
 	position: absolute;
 	top: 190%;
-	left: 0px;
+	left: 0em;
 }
 .fourth-slider-arrow-right {
 	z-index: 10;
 	position: absolute;
 	top: 190%;
-	right: 0px;
+	right: 0em;
 }
 .fourth-svg-arrow:hover{
 	opacity:0.6;
   cursor: pointer;
 }
 
+polyline
+{
+	stroke-linejoin:miter; 
+	stroke:#00275a; 
+	stroke-width:3; 
+	fill: none;
+}
 
-.modal {
+
+.modal 
+{
   display: none; 
   position: fixed; 
   z-index: 99; 
-  left: 0;
-  top: 0;
+  left: 0em;
+  top: 0em;
   width: 100%;
   height: 100%; 
   overflow: auto;
@@ -304,37 +289,35 @@ div #best {
   background-color: rgba(0,0,0,0.4); 
 }
 
-.modal-content {
+.modal-content 
+{
   background-color: #fefefe;
   margin: 15% auto; 
-  padding: 30px;
-  border: 1px solid #888;
+  padding: 1.875em;
+  border: 0.063em solid #888;
   width: 80%;
 }
 
-
-.close {
+.close 
+{
   color: #aaa;
   float: right;
-  font-size: 28px;
+  font-size: 1.750em;
   font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+.close:hover, .close:focus 
+{
   color: black;
   text-decoration: none;
   cursor: pointer;
 }
 
-
-img
-{
-	width: 250px;
-	height: 300px;
-}
-
-
 .slide:nth-child(2) img {
 	filter: blur(20px);
+}
+
+#bestMovieId
+{
+	display: none;
 }
