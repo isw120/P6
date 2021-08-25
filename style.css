@@ -252,13 +252,13 @@ img
 .fourth-slider-arrow-left {
 	z-index: 10;
 	position: absolute;
-	top: 190%;
+	top: 195%;
 	left: 0em;
 }
 .fourth-slider-arrow-right {
 	z-index: 10;
 	position: absolute;
-	top: 190%;
+	top: 195%;
 	right: 0em;
 }
 .fourth-svg-arrow:hover{
