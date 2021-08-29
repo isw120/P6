@@ -313,10 +313,6 @@ polyline
   cursor: pointer;
 }
 
-.slide:nth-child(2) img {
-	filter: blur(20px);
-}
-
 #bestMovieId
 {
 	display: none;

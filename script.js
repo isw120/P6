@@ -64,14 +64,19 @@ function getModalData(value) {
   document.getElementById("movieImg").src = value.image_url
   document.getElementById("movieTitle").innerHTML = "Titre : " + value.title
   document.getElementById("movieGender").innerHTML = "Genre : " + value.genres
-  document.getElementById("movieReleaseDate").innerHTML = "Date de sortie : " + value.title
+  document.getElementById("movieReleaseDate").innerHTML = "Date de sortie : " + value.year
   document.getElementById("movieRated").innerHTML = "Rated : " + value.rated
   document.getElementById("movieScore").innerHTML = "Score Imdb : " + value.imdb_score
   document.getElementById("movieDirectors").innerHTML = "Réalisateur : " + value.directors
   document.getElementById("movieActors").innerHTML = "Liste des acteurs : " + value.actors
   document.getElementById("movieDuration").innerHTML = "Durée : " + value.duration + " minutes"
   document.getElementById("movieCountry").innerHTML = "Le pays d’origine : " + value.countries
-  document.getElementById("movieGrossIncome").innerHTML = "Le résultat au Box Office : " + value.usa_gross_income
+  if (value.usa_gross_income != null) {
+    document.getElementById("movieGrossIncome").innerHTML = "Le résultat au Box Office : " + value.usa_gross_income
+  } else {
+    document.getElementById("movieGrossIncome").innerHTML = "Le résultat au Box Office : aucun"
+  }
+  
   document.getElementById("movieDescription").innerHTML = "Le résumé du film : " + value.description
 
 }
