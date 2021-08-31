@@ -72,7 +72,7 @@ function getModalData(value) {
   document.getElementById("movieDuration").innerHTML = "Durée : " + value.duration + " minutes"
   document.getElementById("movieCountry").innerHTML = "Le pays d’origine : " + value.countries
   if (value.usa_gross_income != null) {
-    document.getElementById("movieGrossIncome").innerHTML = "Le résultat au Box Office : " + value.usa_gross_income
+    document.getElementById("movieGrossIncome").innerHTML = "Le résultat au Box Office : " + value.usa_gross_income + " USD"
   } else {
     document.getElementById("movieGrossIncome").innerHTML = "Le résultat au Box Office : aucun"
   }
