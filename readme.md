@@ -24,4 +24,4 @@ Installation et exécution de l'application sans pipenv (avec venv et pip) :
 
 8 - Cloner le dépôt du projet à l'aide de la commande $ git clone clone https://github.com/isw120/P6 (vous pouvez également télécharger le code en temps qu'archive zip)
 
-9 - après l'étape 8 de la procédure, l'API OCMovies peut être interrogée à partir de ce point d'entrée principal : http://localhost:8000/api/v1/titles en ouvrant le fichier index.html
+9 - Après l'étape 8 de la procédure, l'API OCMovies peut être interrogée à partir de ce point d'entrée principal : http://localhost:8000/api/v1/titles en ouvrant le fichier index.html
