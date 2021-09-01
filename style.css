@@ -143,13 +143,13 @@ img
 	z-index: 10;
 	position: absolute;
 	top: 70%;
-	left: 0em;
+	left: 4em;
 }
 .slider-arrow-right {
 	z-index: 10;
 	position: absolute;
 	top: 70%;
-	right: 0em;
+	right: 6em;
 }
 .svg-arrow:hover{
 	opacity:0.6;
@@ -180,13 +180,13 @@ img
 	z-index: 10;
 	position: absolute;
 	top: 110%;
-	left: 0em;
+	left: 4em;
 }
 .second-slider-arrow-right {
 	z-index: 10;
 	position: absolute;
 	top: 110%;
-	right: 0em;
+	right: 6em;
 }
 .second-svg-arrow:hover{
 	opacity:0.6;
@@ -217,13 +217,13 @@ img
 	z-index: 10;
 	position: absolute;
 	top: 150%;
-	left: 0em;
+	left: 4em;
 }
 .third-slider-arrow-right {
 	z-index: 10;
 	position: absolute;
 	top: 150%;
-	right: 0em;
+	right: 6em;
 }
 .third-svg-arrow:hover{
 	opacity:0.6;
@@ -253,13 +253,13 @@ img
 	z-index: 10;
 	position: absolute;
 	top: 195%;
-	left: 0em;
+	left: 4em;
 }
 .fourth-slider-arrow-right {
 	z-index: 10;
 	position: absolute;
 	top: 195%;
-	right: 0em;
+	right: 6em;
 }
 .fourth-svg-arrow:hover{
 	opacity:0.6;

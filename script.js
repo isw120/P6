@@ -12,7 +12,7 @@ let data = {
 
   async function getBestMovie() {
 
-    data.bestMovieData = fetch("http://localhost:8000/api/v1/titles/1508669")
+    data.bestMovieData = fetch("http://localhost:8000/api/v1/titles/?imdb_score_min=9.4")
   .then(function(res) {
     if (res.ok) {
       return res.json();
@@ -27,17 +27,19 @@ let data = {
 
   data.bestMovieData = await data.bestMovieData.then(result => result);
 
-  document.getElementById("bestMovieTitle").innerHTML = data.bestMovieData.title;
-  document.getElementById("bestMovieDescription").innerHTML = data.bestMovieData.description;
-  document.getElementById("bestMovieImg").src = data.bestMovieData.image_url;
-  document.getElementById("bestMovieId").innerHTML = data.bestMovieData.id;
+  document.getElementById("bestMovieTitle").innerHTML = data.bestMovieData.results[0].title;
+  let img = document.createElement('img');
+  img.src = data.bestMovieData.results[0].image_url;
+  img.id = "bestMovieImg"
+  document.getElementById("divImg").appendChild(img);
+  document.getElementById("bestMovieId").innerHTML = data.bestMovieData.results[0].id;
 
-  getModalData(data.bestMovieData)
+  getMovieData(data.bestMovieData.results[0].id, true)
 
 }
 
 
-  async function getMovieData(id) {
+  async function getMovieData(id, option) {
 
   data.bestMovieData = fetch("http://localhost:8000/api/v1/titles/" + id)
   .then(function(res) {
@@ -54,6 +56,11 @@ let data = {
 
   data.bestMovieData = await data.bestMovieData.then(result => result);
 
+
+  if (option == true) {
+    document.getElementById("bestMovieDescription").innerHTML = data.bestMovieData.description;
+  }
+
   getModalData(data.bestMovieData)
 
 }
@@ -61,7 +68,11 @@ let data = {
 
 function getModalData(value) {
 
-  document.getElementById("movieImg").src = value.image_url
+  document.getElementById("ImageBloc").innerHTML = ""
+  let img = document.createElement('img');
+  img.src = value.image_url;
+  img.id = "movieImg"
+  document.getElementById("ImageBloc").appendChild(img);
   document.getElementById("movieTitle").innerHTML = "Titre : " + value.title
   document.getElementById("movieGender").innerHTML = "Genre : " + value.genres
   document.getElementById("movieReleaseDate").innerHTML = "Date de sortie : " + value.year
@@ -125,7 +136,7 @@ function getModalData(value) {
       let img = document.createElement('img');
         img.src = data.bestMovies[i].image_url;
          img.id = data.bestMovies[i].id
-  img.addEventListener("click", function(e) { getMovieData(e.target.id)
+  img.addEventListener("click", function(e) { getMovieData(e.target.id, false)
     let modal = document.getElementById("myModal")
   modal.style.display = "block"; }, false);
   divs[i].appendChild(img);
@@ -177,7 +188,7 @@ async function getBestAnimationMovies() {
       let img = document.createElement('img');
         img.src = data.bestAnimationMovies[i].image_url;
          img.id = data.bestAnimationMovies[i].id
-  img.addEventListener("click", function(e) { getMovieData(e.target.id)
+  img.addEventListener("click", function(e) { getMovieData(e.target.id, false)
     let modal = document.getElementById("myModal")
   modal.style.display = "block"; }, false);
   divs[i].appendChild(img);
@@ -230,7 +241,7 @@ async function getBestAdventureMovies() {
       let img = document.createElement('img');
         img.src = data.bestAdventureMovies[i].image_url;
          img.id = data.bestAdventureMovies[i].id
-  img.addEventListener("click", function(e) { getMovieData(e.target.id)
+  img.addEventListener("click", function(e) { getMovieData(e.target.id, false)
     let modal = document.getElementById("myModal")
   modal.style.display = "block"; }, false);
   divs[i].appendChild(img);
@@ -283,7 +294,7 @@ async function getBestScifiMovies() {
       let img = document.createElement('img');
         img.src = data.bestScifiMovies[i].image_url;
          img.id = data.bestScifiMovies[i].id
-  img.addEventListener("click", function(e) { getMovieData(e.target.id)
+  img.addEventListener("click", function(e) { getMovieData(e.target.id, false)
     let modal = document.getElementById("myModal")
   modal.style.display = "block"; }, false);
   divs[i].appendChild(img);
@@ -298,7 +309,7 @@ let span = document.getElementsByClassName("close")[0];
 btn.onclick = function() {
     modal.style.display = "block";
     let id = document.getElementById("bestMovieId").innerHTML;
-    getMovieData(id)
+    getMovieData(id, false)
 }
 
 
